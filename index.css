@@ -1,0 +1,54 @@
+.animation{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    background-color: #fa2e80;
+    animation: change 10s 5s linear  infinite  ;
+    border-radius: 50%;
+    padding: 70px 0px 50px  ;
+    text-align: center;
+    box-sizing: border-box;
+    color: white;
+    box-shadow: 2px 3px 5px 2px #e80a5f;
+    font-size: xx-large;
+    text-shadow: 2px 2px #f4f4f4;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+@keyframes change {
+    0%{
+        background-color: #cb4f80;
+        top: 80px;
+        left: 0px;
+        box-shadow: 2px 3px 5px 2px #cb4f80 inset;
+    }
+    25%{
+        background-color: #a74f72;
+        left: 800px;
+        top: 80px;
+        box-shadow: -4px -4px 4px 10px #a74f72;
+    }
+    50%{
+        background-color: #704254;
+        left: 800px;
+        top: 400px;
+        box-shadow: 2px 2px 4px 10px #704254;
+
+    }
+
+    75%{
+        background-color: #621e38;
+        left: 0px;
+        top: 400px;
+        box-shadow: -2px -2px 4px 10px #621e38;
+
+    }
+
+    100%{
+        background-color: #e80a5f;
+        left: 0;
+        top: 80px;
+        box-shadow: -2px -2px 4px 10px #e80a5f;
+        
+    }
+}
